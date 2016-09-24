@@ -15,9 +15,9 @@ Use cases: use a different time for testing, obtain the TZ from the currently lo
 
 == Proposition
 
-=== Mandate `@Past`/`@Future` support for TemporalAccessors
+=== Mandate `@Past`/`@Future` support for `TemporalAccessors`
 
-JSR-310 design intentionally encourages end users to choose concrete types for every day programming, but ensuring there were interfaces and classes that allowed third-party implementations are treated as first-class citizens within the framework. Building on that premise and the different use cases that lead to the creation of the several `java.time.temporal.TemporalAccessor` implementations in Java SE itself (and some in related projects such as https://github.com/ThreeTen/threeten-extra[ThreeTen-Extra]), basic support should be designed around the following requirements for the type:
+JSR-310 design intentionally encouraged end users to choose concrete types for every day programming, but ensured there were  interfaces and classes that allowed third-party implementations to be  treated as first-class citizens within the framework. Building on that premise and the different use cases that lead to the creation of the several `java.time.temporal.TemporalAccessor` implementations in Java SE itself (and some in related projects such as https://github.com/ThreeTen/threeten-extra[ThreeTen-Extra]), basic support should be designed around the following requirements for the type:
 
 * It implements `java.time.temporal.TemporalAccessor`
 * It implements `java.lang.Comparable` using a parameter `T` for which the type is assignable
