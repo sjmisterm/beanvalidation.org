@@ -77,6 +77,10 @@ Similar to message interpolators etc., custom clock providers are CDI-enabled if
 
 === Extending `@Past`/`@Future` to support `nowIsValid`
 
+In many valid use cases, these constraints should consider the current date/time, called now in JSR-310, as valid, especially when it comes to `@Future`. Therefore, both annotations should be changed to include a new attribute, `nowIsValid` (maybe `nowAsValid`), whose default is `false` in order to maintain backwards compatibility.
+
+If the attribute is `true`, a return equals to `0` from `compareTo` will cause the constraint to be considered satisfied.
+
 === "Simple" `TemporalAmount` implementations support
 
 === `Duration` support
