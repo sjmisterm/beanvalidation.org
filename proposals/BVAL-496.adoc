@@ -89,3 +89,4 @@ TODO: consider allowing the bean to implement `ClockProvider`?
 
 1. Proposal 2. assumes that the current time + TZ can be obtained in a rather global fashion, i.e. the logical time of a currently running batch job or the TZ from the currently logged in user's profile etc.
 Is there need to make this more contextual, i.e. expose the validated bean or similar? I can't see a use case for this atm.
+1. One of the most common scenarios with date/time types (applies to ranges of all types though) is to have a start and end property for which start must be (sometimes equal or) greater than now and end must be (sometimes equal or) greater than start. Are we not supporting this somehow?
