@@ -49,6 +49,8 @@ These rules would make the following Threeten-Extra types supported:
 
 To make the current instant customizable, a new SPI which returns `java.time.Clock` to be used by the validation engine for validating `@Past` and `@Future` constraints should be added:
 
+[source,java]
+----
     package javax.validation.spi;
         
     import java.time.Clock;
@@ -56,6 +58,7 @@ To make the current instant customizable, a new SPI which returns `java.time.Clo
     public interface ClockProvider {
         Clock getClock();
     }
+----
 
 BV implementations must use a default `ClockProvider` which always returns `java.time.Clock.systemDefault()`.
 
