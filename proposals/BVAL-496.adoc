@@ -39,7 +39,9 @@ This set of requirements makes the following Java SE types supported:
 * Other partial types: `java.time.MonthDay`, `java.time.OffsetTime`, `java.time.Year`, `java.time.YearMonth`
 * Non-ISO calendar types: `java.time.chrono.HirajDate`, `java.time.chrono.JapaneseDate`, `java.time.chrono.MinguoDate`, `java.time.chrono.ThaiBuddhistDate`
 
-TODO: list types that would be supported in ThreeTen-Extra just as an example
+These rules would make the following Threeten-Extra types supported:
+
+* Partial types: `org.threeten.extra.DayOfMonth`, `org.threeten.extra.DayOfYear`, `org.threeten.extra.YearWeek`, `org.threeten.extra.YearQuarter`
 
 ==== Working around limitations in `ConstraintValidator` that prevent the above strategy
 
