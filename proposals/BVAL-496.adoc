@@ -75,8 +75,6 @@ E.g.
 
 Similar to message interpolators etc., custom clock providers are CDI-enabled if CDI is present, allowing to inject needed contextual information such as the current requests locale.
 
-TODO: consider allowing the bean to implement `ClockProvider`?
-
 === Extending `@Past`/`@Future` to support `nowIsValid`
 
 === "Simple" `TemporalAmount` implementations support
